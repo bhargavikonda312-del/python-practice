@@ -1,0 +1,5 @@
+numbers = [12,24,67,87,99,85]
+even =[n for n in numbers if n%2 == 0]
+odd =[n for n in numbers if n%2 == 1]
+print ("even numbers:",even)
+print("odd numbers:",odd) 
