@@ -1,0 +1,23 @@
+import random
+print("ROCK","PAPER","SCISSORS GAME")
+options = ("rock","paper","scissors")
+while True:
+    user =  input("Enter rock/paper/scissors:").lower()
+    computer = random.choice(options)
+    print("computer choose:",computer)
+    if user == computer:
+        print("it's is a tie")
+    elif user == "rock" and computer == "scissors":
+        print("you win")
+    elif user == "paper" and computer == "rock":
+        print("you win")
+    elif user == "scissors" and computer == "paper":
+        print("you win")
+    elif user in options:
+        print("you lose")
+    else:
+        print("invalid input")
+    again = input ("play again?(yes/no):").lower()
+    if again == "no":
+        print("Game Ended")
+        break
