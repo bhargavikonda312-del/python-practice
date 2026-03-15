@@ -1,0 +1,5 @@
+def extractonly_vowels(text):
+    vowels = "aeiouAEIOU"
+    result="vowels ",([ch for ch in text if ch in vowels])
+S = "Bhargavi"
+print("vowels:",extractonly_vowels(S))
