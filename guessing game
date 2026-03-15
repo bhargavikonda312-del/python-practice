@@ -1,0 +1,21 @@
+#"Guess the number"
+#programmed by zachary fruhling"
+#Copyright 2020
+import random
+CorrectAnswer = random, (1,100)
+gameOver = False
+while gameOver == "Flase":
+    playerGuess = int(input("Guess a number between 1 and 100:"))
+    if playerGuess == CorrectAnswer:
+        compareAnswer = "Right"
+        gameOver = True
+    elif playerGuess > CorrectAnswer:
+        compareAnswer = "High"
+    elif playerGuess < CorrectAnswer:
+        compareAnswer = "Low"
+    if compareAnswer == "Right":
+        print("Correct! You Win!")
+    elif compareAnswer == "High":
+        print("Too High! Guess Again!")
+    elif compareAnswer == "Low":
+        print("Too low! Guess Again!")
